@@ -1,65 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: url(https://images.openai.com/static-rsc-4/JG1TWLY6uN6UqM8MSk1Ivj-8Etjl7DsJxqUD2Mdy8P6LtSIFJEEsZ1ioTO3a_XPpK77nJK85xAE-G6BLJa4VobT4Epk13S0huRvX8uwC9x2HZpgXiT6fQL_Ka9jvM-uQkNXnSikWeqe905F3TNqktRTjPznYYONywG_UHkAZe36zfO8EAb5HtXiH4eO6IR9A?purpose=fullsize) no-repeat center/cover;
-    z-index: -2;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-
-.card {
+/* Карточка */
+.container {
     background: white;
-    padding: 25px;
-    width: 340px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
+/* Заголовок */
 h1 {
     margin-bottom: 10px;
-    color: #222;
+    color: #333;
 }
 
 p {
-    color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: #666;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
+/* Поля */
 select, input {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 6px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 16px;
 }
 
+/* Фокус */
+select:focus, input:focus {
+    outline: none;
+    border-color: #00b4db;
+}
 
+/* Кнопка */
 button {
     width: 100%;
-    margin-top: 15px;
-    padding: 10px;
-    border: none;
-    background-color: #2e7d32;
+    padding: 12px;
+    background: linear-gradient(135deg, #00b4db, #0083b0);
     color: white;
+    border: none;
+    border-radius: 8px;
     font-size: 16px;
-    border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #1b5e20;
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #0083b0, #005f73);
 }
 
-
+/* Результат */
 #result {
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
