@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+    background: url(https://images.openai.com/static-rsc-4/JG1TWLY6uN6UqM8MSk1Ivj-8Etjl7DsJxqUD2Mdy8P6LtSIFJEEsZ1ioTO3a_XPpK77nJK85xAE-G6BLJa4VobT4Epk13S0huRvX8uwC9x2HZpgXiT6fQL_Ka9jvM-uQkNXnSikWeqe905F3TNqktRTjPznYYONywG_UHkAZe36zfO8EAb5HtXiH4eO6IR9A?purpose=fullsize);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-/* Карточка */
+
 .card {
     background: white;
     padding: 25px;
@@ -40,7 +40,7 @@ select, input {
     border: 1px solid #ccc;
 }
 
-/* Кнопка */
+
 button {
     width: 100%;
     margin-top: 15px;
@@ -57,7 +57,7 @@ button:hover {
     background-color: #1b5e20;
 }
 
-/* Результат */
+
 #result {
     margin-top: 15px;
     font-weight: bold;
